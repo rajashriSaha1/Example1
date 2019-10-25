@@ -286,9 +286,7 @@ public class CollectionDataInsert {
 		connectionDB1 = getDBConnection();
 		PreparedStatement preparedStatement = null;
 		try
-		{
-			
-
+		{ 
 			String updateSchedularStatusSql =  " UPDATE EPS.BJSCHEDULER SET STATUS = ?, EXCEPTION = ?	" +
 										 	   " WHERE FILENAME = ? ";
 			preparedStatement = connectionDB1.prepareStatement(updateSchedularStatusSql);
